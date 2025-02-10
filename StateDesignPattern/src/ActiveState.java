@@ -1,12 +1,12 @@
 public class ActiveState implements AccountState {
     public void deposit(Account account, double amount) {
         account.setBalance(account.getBalance() + amount);
-        System.out.println("Deposited: " + account);
+        System.out.println("Deposited: " + amount + ". " + account);
     }
 
     public void withdraw(Account account, double amount) {
             account.setBalance(account.getBalance() - amount);
-            System.out.println("Withdrew: " + account);
+            System.out.println("Withdrew: " + amount + ". " + account);
     }
 
     public void activate(Account account) {
